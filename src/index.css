@@ -129,3 +129,48 @@ body {
         transform: scale(1.3);
     }
 }
+
+/* About */
+.curv{
+    background-color: var(--prim-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #111111;
+    padding: 15px;
+    border-radius: 0px 30px 0 0;
+}
+.about-item-curv{
+    background-color: transparent !important;
+}
+.section-item-curv i {
+    color: var(--prim-color);
+    border: 1px solid var(--prim-color);
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.curv::after{
+    content: '';
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: transparent;
+    left: 0;
+    top: -1.125rem;
+    border-bottom-left-radius: 30px;
+    box-shadow: -5px 5px #111111;
+}
+.curv::before{
+    content: '';
+    width: 1.25rem;
+    height: 1.25rem;
+    position: absolute;
+    background-color: transparent;
+    right: -20px;
+    bottom: 0rem;
+    border-bottom-left-radius: 30px;
+    box-shadow: -5px 5px 0 5px #111111;
+}

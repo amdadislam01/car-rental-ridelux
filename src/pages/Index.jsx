@@ -1,7 +1,9 @@
 import React from 'react'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import 'swiper/css'
+import 'swiper/css';
 import { Pagination, Autoplay } from 'swiper/modules'
+
+import about from '../assets/about.jpg';
 
 const Index = () => {
   return (
@@ -27,6 +29,7 @@ const Index = () => {
             </div>
           </div>
           </SwiperSlide>
+
           <SwiperSlide>
           <div className="hero-slide hero-slide2 w-full h-full flex items-center px-[12%]">
             <div className="hero-content text-white lg:w-[60%]">
@@ -43,6 +46,7 @@ const Index = () => {
             </div>
           </div>
           </SwiperSlide>
+
           <SwiperSlide>
           <div className="hero-slide hero-slide3 w-full h-full flex items-center px-[12%]">
             <div className="hero-content text-white lg:w-[60%]">
@@ -60,6 +64,45 @@ const Index = () => {
           </div>
           </SwiperSlide>
         </Swiper>
+      </div>
+      {/* About Section */}
+      <div className="about text-white lg:px-[10%] px-[8%] py-[50px] lg:py-[90px]">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+          <div className="relative w-auto sm:h-[450px] lg:h-[600px]">
+            <img src={about} alt="" className='rounded-3xl w-full h-full object-contain md:object-cover' />
+            <div className="curv bg-[#111111]">
+              <div className="about-item-curv section-item-curv">
+                <i className="ri-play-line text-xl"></i>
+              </div>
+            </div>
+          </div>
+          <div className="">
+            <p className="uppercase text-xs md:text-sm tracking-widest text-[#e8021f] mb-2">- Rentax</p>
+            <h2 className='text-3xl md:text-5xl font-bold mb-3 bricolage-font'>We Are More Than <br /> <span className='text-[#e8021f] bricolage-font'>A Car Rental Company</span></h2>
+            <p className="text-gray-400 leading-relaxed my-6 text-sm lg:text-base">
+              Car repair quisque sodales dui ut varius vestibulm drana tortor turpis portition tellus eu euismod nisl massa nutodio in the miss volume place 
+              urna lacinia erros nuntna urna mauris vehicul rutrum in the miss on volume interdum.
+            </p>
+
+            <div className="space-y-4 mb-10">
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-full bg-[#222] flex items-center justify-center text-[#e8021f]">
+                  <i className="ri-check-double-line"></i>
+                </div>
+                <span className='text-white'>Sports and Luxury Cars</span>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-full bg-[#222] flex items-center justify-center text-[#e8021f]">
+                  <i className="ri-check-double-line"></i>
+                </div>
+                <span className='text-white'>Economy Cars</span>
+              </div>
+            </div>
+            <button className='bg-[#e8021f] text-white px-8 py-4 rounded-full font-medium flex items-center gap-2 hover:bg-black transition-colors duration-300 cursor-pointer'>
+              Read More <i className="ri-arrow-right-line"></i>
+            </button>
+          </div>
+        </div>
       </div>
     </>
   )
