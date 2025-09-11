@@ -195,3 +195,30 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     z-index: -1;
 }
+/* Service */
+
+.service-item{
+    padding: 60px 40px 120px 40px;
+    transition: var(--transition-regular);
+}
+.service-item-curv {
+    background-color: #111111;
+}
+.section-item-curv {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 1.2rem;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-color: var(--prim-color);
+    transition: var(--transition-regular);
+}
+
+.service-item:hover .service-item-curv {
+    border: 2px solid #222;
+    background-color: transparent;
+}

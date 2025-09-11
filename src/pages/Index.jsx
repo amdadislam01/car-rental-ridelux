@@ -379,6 +379,47 @@ const Index = () => {
           </SwiperSlide>
         </Swiper>
       </div>
+      {/* Service */}
+      <div className="our-service lg:px-[12%] px-[8%] py-[50px] lg:py-[90px]">
+        <div className="our-service-content mb-20 text-center text-white">
+          <p className="uppercase text-sm tracking-[5px] text-[#e8021f] mb-2">- What We Do</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-3 bricolage-font">Others Services</h2>
+        </div>
+        <div className="our-service-wrapper">
+          <div className="grid w-full gap-12 grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
+            <div className="service-item relative text-white rounded-[30px] bg-[#222222] w-full">
+              <h5 className='font-semibold text-3xl mb-3 bricolage-font'>Daily Car Rental</h5>
+              <p className="text-[#999] text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Nesciunt facere architecto quas at minus officiis! Voluptatem tenetur dolore sint perspiciatis.</p>
+              <div className="curv">
+                <div className="service-item-curv section-item-curv">
+                  1.
+                </div>
+              </div>
+            </div>
+            <div className="service-item relative text-white rounded-[30px] bg-[#222222] w-full">
+              <h5 className='font-semibold text-3xl mb-3 bricolage-font'>Monthly Car Rental</h5>
+              <p className="text-[#999] text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Nesciunt facere architecto quas at minus officiis! Voluptatem tenetur dolore sint perspiciatis.</p>
+              <div className="curv">
+                <div className="service-item-curv section-item-curv">
+                  2.
+                </div>
+              </div>
+            </div>
+            <div className="service-item relative text-white rounded-[30px] bg-[#222222] w-full">
+              <h5 className='font-semibold text-3xl mb-3 bricolage-font'>Annual Car Rental</h5>
+              <p className="text-[#999] text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Nesciunt facere architecto quas at minus officiis! Voluptatem tenetur dolore sint perspiciatis.</p>
+              <div className="curv">
+                <div className="service-item-curv section-item-curv">
+                  3.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
