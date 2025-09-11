@@ -164,6 +164,22 @@ const Index = () => {
                 </ul>
               </div>
             </div>
+
+            {/* Pick Date */}
+            <div className="relative w-full lg:w-auto px-4 py-3 flex items-center border-r border-gray-600 cursor-pointer" onClick={openCalender}>
+              <DatePicker 
+              selected={pickUpDate}
+              onChange={(date) => setPickUpDate(date)}
+              dateFormat="dd MMM YYYY"
+              placeholderText='Pick Up Date'
+              ref={datePickerRef}
+              className={`bg-[#1f1f1f] text-white outline-none cursor-pointer w-full ${!pickUpDate ? 'text-gray-400' : ''}`}
+              calendarClassName='dark-datepicker'
+              popperPlacement='bottom-start'
+              />
+
+              <i className='ri-calendar-line text-[#e8021f] pointer-events-none'></i>
+            </div>
           </div>
         </div>
       </div>
