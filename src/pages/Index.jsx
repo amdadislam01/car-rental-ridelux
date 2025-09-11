@@ -212,6 +212,51 @@ const Index = () => {
           </div>
         </div>
       </div>
+      {/* Car Categories */}
+      <div className="car-categories lg:px-[12%] px-[8%] py-[50px] lg:py-[90px]">
+        <div className="car-categories-content text-center mb-10 lg:mb-14">
+          <p className="uppercase text-sm tracking-[5px] mb-2 text-[#e8021f]">- Car Categories</p>
+          <h2 className='text-4xl md:text-5xl font-bold mb-3 text-white bricolage-font'>Choose the Right Car for Your Trip</h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
+          <div className="bg-[#1e1e23] h-auto md:h-[400px] car-ctg-item relative flex justify-between items-start flex-col overflow-hidden w-full">
+            <div className="car-ctg-info p-4">
+              <h4 className="text-white text-3xl xxl:text-4xl  font-semibold bricolage-font pb-1">Luxury Cars</h4>
+              <span className='text-gray-400 text-lg xxl:text-xl bricolage-font'>40+ Cars Ready</span>
+            </div>
+            <div className="car-ctg w-full h-full">
+              <img src={carctg1} alt="car-image" className='w-[100%] h-full object-cover translate-x-10 translate-y-10' />
+            </div>
+          </div>
+          <div className="bg-[#1e1e23] h-auto md:h-[400px] car-ctg-item relative flex justify-between items-start flex-col overflow-hidden w-full">
+            <div className="car-ctg-info p-4">
+              <h4 className="text-white text-3xl xxl:text-4xl  font-semibold bricolage-font pb-1">SUVs</h4>
+              <span className='text-gray-400 text-lg xxl:text-xl bricolage-font'>70+ Cars Ready</span>
+            </div>
+            <div className="car-ctg w-full h-full">
+              <img src={carctg2} alt="car-image" className='w-[100%] h-full object-cover translate-x-10 translate-y-10' />
+            </div>
+          </div>
+          <div className="bg-[#1e1e23] h-auto md:h-[400px] car-ctg-item relative flex justify-between items-start flex-col overflow-hidden w-full">
+            <div className="car-ctg-info p-4">
+              <h4 className="text-white text-3xl xxl:text-4xl  font-semibold bricolage-font pb-1">Economy Cars</h4>
+              <span className='text-gray-400 text-lg xxl:text-xl bricolage-font'>100+ Cars Ready</span>
+            </div>
+            <div className="car-ctg w-full h-full">
+              <img src={carctg3} alt="car-image" className='w-[100%] h-full object-cover translate-x-10 translate-y-10' />
+            </div>
+          </div>
+          <div className="bg-[#1e1e23] h-auto md:h-[400px] car-ctg-item relative flex justify-between items-start flex-col overflow-hidden w-full">
+            <div className="car-ctg-info p-4">
+              <h4 className="text-white text-3xl xxl:text-4xl  font-semibold bricolage-font pb-1">Vans & MPVs</h4>
+              <span className='text-gray-400 text-lg xxl:text-xl bricolage-font'>60+ Cars Ready</span>
+            </div>
+            <div className="car-ctg w-full h-full">
+              <img src={carctg4} alt="car-image" className='w-[100%] h-full object-cover translate-x-10 translate-y-10' />
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
