@@ -118,11 +118,11 @@ const Index = () => {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative w-auto sm:h-[450px] lg:h-[600px]">
             <img src={about} alt="" className='rounded-3xl w-full h-full object-contain md:object-cover' />
-            <div className="curv bg-[#111111]">
+            {/* <div className="curv bg-[#111111]">
               <div className="about-item-curv section-item-curv">
                 <i className="ri-play-line text-xl"></i>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="">
             <p className="uppercase text-xs md:text-sm tracking-widest text-[#e8021f] mb-2">- Rentax</p>
@@ -458,7 +458,7 @@ const Index = () => {
                 <div className="flex justify-between items-center mt-12">
                   <h4 className="text-2xl md:text-4xl text-gray-400 font-bold bricolage-font">$ {car.price}/day</h4>
                   <Link to={`/car/${car.id}`}>
-                  <button className='text-white bg-red-600 px-5 py-3 text-lg md:text-xl rounded-full cursor-pointer'>Book Now</button>
+                  <button className='text-white bg-red-600 hover:bg-black transition-all duration-300 px-5 py-3 text-lg md:text-xl rounded-full cursor-pointer'>Book Now</button>
                   </Link>
                 </div>
               </div>
