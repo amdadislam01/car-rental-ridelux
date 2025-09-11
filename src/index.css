@@ -43,6 +43,8 @@ body {
 .logo span {
   color: var(--prim-color);
 }
+/* Navabr */
+
 
 .menu {
     transition: var(--transition-regular) !important;
@@ -75,5 +77,55 @@ body {
 @media screen and (max-width: 991px) {
     .menu li a::after {
         opacity: 0;
+    }
+}
+/* Hero */
+.hero-slide{
+    position: relative;
+    z-index: 5;
+}
+.hero-slide::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/hero-slide-1.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    animation: Anim-Zoom 2.5s 1.4s forwards linear;
+}
+.hero-slide2::before {
+    background-image: url(assets/hero-slide-2.webp);
+}
+.hero-slide3::before{
+    background-image: url(assets/hero-slide-3.webp);
+}
+
+.hero-slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 5;
+}
+
+@keyframes Anim-Zoom {
+    0% {
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.3);
     }
 }
