@@ -13,6 +13,23 @@ import carctg2 from '../assets/car-ctg-02.png';
 import carctg3 from '../assets/car-ctg-03.png';
 import carctg4 from '../assets/car-ctg-04.png';
 
+import brand1 from '../assets/brand-01.webp';
+import brand2 from '../assets/brand-02.webp';
+import brand3 from '../assets/brand-03.webp';
+import brand4 from '../assets/brand-04.webp';
+import brand5 from '../assets/brand-05.webp';
+import brand6 from '../assets/brand-06.webp';
+import brand7 from '../assets/brand-07.webp';
+import brand8 from '../assets/brand-08.webp';
+import brand9 from '../assets/brand-09.webp';
+import brand10 from '../assets/brand-10.webp';
+import brand11 from '../assets/brand-11.webp';
+import brand12 from '../assets/brand-12.webp';
+import brand13 from '../assets/brand-13.webp';
+import brand14 from '../assets/brand-14.webp';
+import brand15 from '../assets/brand-15.webp';
+import brand16 from '../assets/brand-16.webp';
+
 const Index = () => {
 
   const [pickUpDate, setPickUpDate] = useState(null);
@@ -257,6 +274,8 @@ const Index = () => {
           </div>
         </div>
       </div>
+      {/* Brands */}
+      
     </>
   )
 }
