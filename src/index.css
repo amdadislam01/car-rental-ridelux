@@ -1,22 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import "tailwindcss";
 
 
-:root {
-    --prim-color: #e8021f;
-
-    --section-dark-bg: #1b1b1b;
-    --section-light-bg: #222222;
-    --text-light: #999;
-    --white-color: #fff;
-    --black-color: #000;
-
-    --Bricolage-font: "Bricolage Grotesque", sans-serif;
-    --Roboto-font: "Roboto", sans-serif;
-    --Jost-font: "Jost", sans-serif;
-
-    --transition-regular: 0.3s;
-    --transition-slow: 0.6s;
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: var(--Roboto-font);
 }
 
+:root {
+  --prim-color: #e8021f;
+
+  --section-dark-bg: #1b1b1b;
+  --section-light-bg: #222222;
+  --text-light: #999;
+  --white-color: #fff;
+  --black-color: #000;
+
+  --Bricolage-font: "Bricolage Grotesque", sans-serif;
+  --Roboto-font: "Roboto", sans-serif;
+  --Jost-font: "Jost", sans-serif;
+
+  --transition-regular: 0.3s;
+  --transition-slow: 0.6s;
+}
+
+.bricolage-font {
+  font-family: var(--Bricolage-font)
+}
+.roboto-font {
+    font-family: var(--Roboto-font);
+}
+.jost-font{
+    font-family: var(--Jost-font);
+}
+
+html,
+body {
+  background-color: #111111;
+}
+.logo span {
+  color: var(--prim-color);
+}
+
+.menu {
+    transition: var(--transition-regular) !important;
+}
+.menu li {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    transition: var(--transition-regular);
+}
+.menu li a::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: var(--prim-color);
+    transition: var(--transition-regular);
+    z-index: 1;
+}
+.menu li a:hover::after {
+    width: 100%;
+}
+.menu li a:hover{
+    color: var(--prim-color);
+}
+
+@media screen and (max-width: 991px) {
+    .menu li a::after {
+        opacity: 0;
+    }
+}
