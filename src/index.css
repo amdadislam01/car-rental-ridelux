@@ -1,1 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "tailwindcss";
+
+
+:root {
+    --prim-color: #e8021f;
+
+    --section-dark-bg: #1b1b1b;
+    --section-light-bg: #222222;
+    --text-light: #999;
+    --white-color: #fff;
+    --black-color: #000;
+
+    --Bricolage-font: "Bricolage Grotesque", sans-serif;
+    --Roboto-font: "Roboto", sans-serif;
+    --Jost-font: "Jost", sans-serif;
+
+    --transition-regular: 0.3s;
+    --transition-slow: 0.6s;
+}
+

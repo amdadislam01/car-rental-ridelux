@@ -1,9 +1,13 @@
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import React from 'react'
+import Navbar from './components/Navbar'
 
 const App = () => {
   return (
     <>
-      <h1 className='text-4xl text-center font-bold'>Hlw I am Amdad Islam</h1>
+      <Router>
+        <Navbar />
+      </Router>
     </>
   )
 }
