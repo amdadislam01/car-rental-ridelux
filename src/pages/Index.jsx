@@ -275,7 +275,110 @@ const Index = () => {
         </div>
       </div>
       {/* Brands */}
-      
+      <div className="bg-[#222222] w-full lg:px-[12%] px-[8%] py-[50px]">
+        <Swiper
+        slidesPerView={6}
+        spaceBetween={20}
+        loop={true}
+        autoplay={true}
+        className='brands-swiper flex justify-center items-center'
+        breakpoints={{
+          1399: {
+            slidesPerView: 6
+          },
+          767: {
+            slidesPerView: 4
+          },
+          575: {
+            slidesPerView: 2
+          },
+          0: {
+            slidesPerView: 1
+          }
+        }}
+        >
+          <SwiperSlide>
+            <div className="brand-image h-[120px] w-full md:w-[120px] flex justify-center items-center">
+              <img src={brand1} alt="brand-image" className='w-full h-full object-contain md:object-cover' />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="brand-image h-[120px] w-full md:w-[120px] flex justify-center items-center">
+              <img src={brand2} alt="brand-image" className='w-full h-full object-contain md:object-cover' />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="brand-image h-[120px] w-full md:w-[120px] flex justify-center items-center">
+              <img src={brand3} alt="brand-image" className='w-full h-full object-contain md:object-cover' />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="brand-image h-[120px] w-full md:w-[120px] flex justify-center items-center">
+              <img src={brand4} alt="brand-image" className='w-full h-full object-contain md:object-cover' />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="brand-image h-[120px] w-full md:w-[120px] flex justify-center items-center">
+              <img src={brand5} alt="brand-image" className='w-full h-full object-contain md:object-cover' />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="brand-image h-[120px] w-full md:w-[120px] flex justify-center items-center">
+              <img src={brand6} alt="brand-image" className='w-full h-full object-contain md:object-cover' />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="brand-image h-[120px] w-full md:w-[120px] flex justify-center items-center">
+              <img src={brand7} alt="brand-image" className='w-full h-full object-contain md:object-cover' />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="brand-image h-[120px] w-full md:w-[120px] flex justify-center items-center">
+              <img src={brand8} alt="brand-image" className='w-full h-full object-contain md:object-cover' />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="brand-image h-[120px] w-full md:w-[120px] flex justify-center items-center">
+              <img src={brand9} alt="brand-image" className='w-full h-full object-contain md:object-cover' />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="brand-image h-[120px] w-full md:w-[120px] flex justify-center items-center">
+              <img src={brand10} alt="brand-image" className='w-full h-full object-contain md:object-cover' />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="brand-image h-[120px] w-full md:w-[120px] flex justify-center items-center">
+              <img src={brand11} alt="brand-image" className='w-full h-full object-contain md:object-cover' />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="brand-image h-[120px] w-full md:w-[120px] flex justify-center items-center">
+              <img src={brand12} alt="brand-image" className='w-full h-full object-contain md:object-cover' />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="brand-image h-[120px] w-full md:w-[120px] flex justify-center items-center">
+              <img src={brand13} alt="brand-image" className='w-full h-full object-contain md:object-cover' />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="brand-image h-[120px] w-full md:w-[120px] flex justify-center items-center">
+              <img src={brand14} alt="brand-image" className='w-full h-full object-contain md:object-cover' />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="brand-image h-[120px] w-full md:w-[120px] flex justify-center items-center">
+              <img src={brand15} alt="brand-image" className='w-full h-full object-contain md:object-cover' />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="brand-image h-[120px] w-full md:w-[120px] flex justify-center items-center">
+              <img src={brand16} alt="brand-image" className='w-full h-full object-contain md:object-cover' />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </>
   )
 }
