@@ -38,6 +38,7 @@ import test4 from "../assets/test-4.jpg";
 import test5 from "../assets/test-5.jpg";
 
 import cardata from "../../Cars.json";
+import blogdata from "../../Blog.json";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -729,9 +730,21 @@ const Index = () => {
             delay: 3000,
           }}
           breakpoints={{
-            640: { slidesPerView: 1 },
-            1024: { slidesPerView: 2 },
-            1440: { slidesPerView: 3 },
+            0: {
+              slidesPerView: 1,
+            },
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 2,
+            },
+            1280: {
+              slidesPerView: 3,
+            },
           }}
         >
           {/* 1 */}
@@ -912,6 +925,33 @@ const Index = () => {
             </div>
           </SwiperSlide>
         </Swiper>
+      </div>
+      {/* Blog Section */}
+      <div className="blog lg:px-[12%] px-[8%] py-[50px] lg:py-[90px]">
+        <div className="blog-content mb-20 text-center text-white">
+          <p className="uppercase text-sm tracking-[5px] text-[#e8021f] mb-2">
+            - Our Blog
+          </p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-3 bricolage-font">
+            Latest{" "}
+            <span className="text-[#e8021f] bricolage-font">News</span>
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+          {blogdata.slice(0,3).map((blog) => (
+            <div className="blog-item bg-[#1f1f22] group" key={blog.id}>
+              <div className="blog-image overflow-hidden">
+                <img src={blog.image} alt={blog.title} className="group-hover:scale-110 transition-all duration-300 w-full h-[250px] object-cover" />
+              </div>
+              <div className="blog-content p-5 py-8">
+                <div className="ate bg-red-600 w-fit px-4 py-0.5 text-md text-white bricolage-font rounded-md mb-3">
+                  {blog.date}
+                </div>
+                <h4 className="text-lg lg:text-2xl bricolage-font text-white font-semibold uppercase">{blog.name}</h4>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
