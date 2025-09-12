@@ -939,7 +939,7 @@ const Index = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
           {blogdata.slice(0,3).map((blog) => (
-            <div className="blog-item bg-[#1f1f22] group" key={blog.id}>
+            <div className="blog-item bg-[#1e1f22] group" key={blog.id}>
               <div className="blog-image overflow-hidden">
                 <img src={blog.image} alt={blog.title} className="group-hover:scale-110 transition-all duration-300 w-full h-[250px] object-cover" />
               </div>

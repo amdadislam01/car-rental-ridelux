@@ -3,6 +3,7 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import Index from './pages/Index'
 import CarDetails from './pages/CarDetails'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
           <Route path='/' element={<Index />}/>
           <Route path='/car/:id' element={<CarDetails />}/>
         </Routes>
+        <Footer />
       </Router>
     </>
   )
