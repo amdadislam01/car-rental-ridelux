@@ -466,7 +466,13 @@ const Index = () => {
           ))}
         </div>
       </div>
-      {/* Testmonial */}
+      {/* Testimonial */}
+      <div className="testimonials lg:px-[12%] px-[8%] py-[50px] lg:py-[90px]">
+        <div className="our-service-content mb-20 text-center text-white">
+          <p className="uppercase text-sm tracking-[5px] text-[#e8021f] mb-2">- Testimonials</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-3 bricolage-font">Trusted By Thousands</h2>
+        </div>
+      </div>
     </>
   )
 }
