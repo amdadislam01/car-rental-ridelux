@@ -235,3 +235,8 @@ body {
     background-image: linear-gradient(180deg, #02010100 -6%, #1E1E22 94%);
     z-index: 0;
 }
+
+/* Car DDETAILS */
+.popup-form .react-datepicker-wrapper{
+    width: 100% !important;
+}
