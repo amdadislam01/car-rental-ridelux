@@ -233,20 +233,22 @@ const CarDetails = () => {
 
       {/* Booking Form Modal */}
       {showModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm px-4">
-          <div className="bg-[#0d0d0d]/90 rounded-2xl shadow-2xl max-w-4xl w-full overflow-hidden">
-            <div className="bg-red-600 px-6 py-4 flex items-center justify-between">
-              <h2 className="text-xl font-bold text-white bricolage-font">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm px-2">
+          <div className="bg-[#0d0d0d]/90 rounded-2xl shadow-2xl w-full max-w-lg sm:max-w-2xl md:max-w-4xl mx-auto overflow-y-auto max-h-[90vh]">
+            {/* Header */}
+            <div className="bg-red-600 px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
+              <h2 className="text-lg sm:text-xl font-bold text-white bricolage-font">
                 Book Your Dream Car
               </h2>
               <button
                 onClick={() => setShowModal(false)}
-                className="text-white text-2xl hover:scale-110 transition"
+                className="text-white text-xl sm:text-2xl hover:scale-110 transition"
               >
                 <i className="fa-solid fa-xmark"></i>
               </button>
             </div>
 
+      
             {/* Form section */}
             <form
               className="p-6 space-y-6 my-4 popup-form bg-[#1a1a1a] rounded-xl shadow-lg"
@@ -256,42 +258,43 @@ const CarDetails = () => {
                 setShowSuccessModal(true);
               }}
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Grid Container */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                {/* Full Name */}
                 <div>
                   <input
                     type="text"
                     placeholder="Full Name"
-                    className="w-full h-[50px] px-3 bg-[#121212] text-white rounded-md border border-gray-600 
-              focus:ring-2 focus:ring-red-500 outline-none"
+                    className="w-full h-[50px] px-3 bg-[#121212] text-white rounded-md border border-gray-600 focus:ring-2 focus:ring-red-500 outline-none"
                     required
                   />
                 </div>
 
+                {/* Email */}
                 <div>
                   <input
                     type="email"
                     placeholder="Enter Your Email"
-                    className="w-full h-[50px] px-3 bg-[#121212] text-white rounded-md border border-gray-600 
-              focus:ring-2 focus:ring-red-500 outline-none"
+                    className="w-full h-[50px] px-3 bg-[#121212] text-white rounded-md border border-gray-600 focus:ring-2 focus:ring-red-500 outline-none"
                     required
                   />
                 </div>
 
+                {/* Phone Number */}
                 <div>
                   <input
                     type="text"
                     placeholder="Enter Your Number"
-                    className="w-full h-[50px] px-3 bg-[#121212] text-white rounded-md border border-gray-600 
-              focus:ring-2 focus:ring-red-500 outline-none"
+                    className="w-full h-[50px] px-3 bg-[#121212] text-white rounded-md border border-gray-600 focus:ring-2 focus:ring-red-500 outline-none"
                     required
                   />
                 </div>
 
+                {/* Car Type */}
                 <div>
                   <select
                     required
-                    className="w-full h-[50px] px-3 bg-[#121212] text-white rounded-md border border-gray-600 
-              focus:ring-2 focus:ring-red-500 outline-none"
+                    className="w-full h-[50px] px-3 bg-[#121212] text-white rounded-md border border-gray-600 focus:ring-2 focus:ring-red-500 outline-none"
                   >
                     <option hidden>Choose Car Type</option>
                     <option>Lamborghini</option>
@@ -304,8 +307,7 @@ const CarDetails = () => {
                 <div>
                   <select
                     required
-                    className="w-full h-[50px] px-3 bg-[#121212] text-white rounded-md border border-gray-600 
-              focus:ring-2 focus:ring-red-500 outline-none"
+                    className="w-full h-[50px] px-3 bg-[#121212] text-white rounded-md border border-gray-600 focus:ring-2 focus:ring-red-500 outline-none"
                   >
                     <option hidden>Pick-Up Location</option>
                     <option>Dubai</option>
@@ -322,25 +324,20 @@ const CarDetails = () => {
                     dateFormat="dd MMM yyyy"
                     placeholderText="Pick Up Date"
                     ref={datePickerRef}
-                    className={`w-full h-[50px] px-3 bg-[#121212] text-white rounded-md border border-gray-600 
-              focus:ring-2 focus:ring-red-500 outline-none ${
-                !pickUpDate ? "text-gray-400" : ""
-              }`}
+                    className={`w-full h-[50px] px-3 bg-[#121212] text-white rounded-md border border-gray-600 focus:ring-2 focus:ring-red-500 outline-none ${
+                      !pickUpDate ? "text-gray-400" : ""
+                    }`}
                     calendarClassName="dark-datepicker"
                     popperPlacement="bottom-start"
                   />
-                  <i
-                    className="ri-calendar-line absolute right-3 top-1/2 -translate-y-1/2 
-            text-red-500 pointer-events-none"
-                  ></i>
+                  <i className="ri-calendar-line absolute right-3 top-1/2 -translate-y-1/2 text-red-500 pointer-events-none"></i>
                 </div>
 
                 {/* Drop-Off Location */}
                 <div>
                   <select
                     required
-                    className="w-full h-[50px] px-3 bg-[#121212] text-white rounded-md border border-gray-600 
-              focus:ring-2 focus:ring-red-500 outline-none"
+                    className="w-full h-[50px] px-3 bg-[#121212] text-white rounded-md border border-gray-600 focus:ring-2 focus:ring-red-500 outline-none"
                   >
                     <option hidden>Drop-Off Location</option>
                     <option>Sharjah</option>
@@ -356,25 +353,21 @@ const CarDetails = () => {
                     dateFormat="dd MMM yyyy"
                     placeholderText="Drop Off Date"
                     ref={returnPickerRef}
-                    className={`w-full h-[50px] px-3 bg-[#121212] text-white rounded-md border border-gray-600 
-              focus:ring-2 focus:ring-red-500 outline-none ${
-                !dropOffDate ? "text-gray-400" : ""
-              }`}
+                    className={`w-full h-[50px] px-3 bg-[#121212] text-white rounded-md border border-gray-600 focus:ring-2 focus:ring-red-500 outline-none ${
+                      !dropOffDate ? "text-gray-400" : ""
+                    }`}
                     calendarClassName="dark-datepicker"
                     popperPlacement="bottom-start"
                   />
-                  <i
-                    className="ri-calendar-line absolute right-3 top-1/2 -translate-y-1/2 
-            text-red-500 pointer-events-none"
-                  ></i>
+                  <i className="ri-calendar-line absolute right-3 top-1/2 -translate-y-1/2 text-red-500 pointer-events-none"></i>
                 </div>
 
+                {/* Message */}
                 <div className="md:col-span-2">
                   <textarea
                     rows="4"
                     placeholder="Send Message"
-                    className="w-full px-3 py-3 bg-[#121212] text-white rounded-md border border-gray-600 
-              focus:ring-2 focus:ring-red-500 outline-none"
+                    className="w-full px-3 py-3 bg-[#121212] text-white rounded-md border border-gray-600 focus:ring-2 focus:ring-red-500 outline-none"
                   ></textarea>
                 </div>
               </div>
@@ -382,8 +375,7 @@ const CarDetails = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full py-3 text-lg rounded-full bg-red-600 text-white hover:bg-red-700 
-          transition cursor-pointer font-semibold bricolage-font"
+                className="w-full py-3 text-lg rounded-full bg-red-600 text-white hover:bg-red-700 transition cursor-pointer font-semibold bricolage-font"
               >
                 Rent Now
               </button>
@@ -395,23 +387,20 @@ const CarDetails = () => {
       {/* Success Modal */}
       {showSuccessModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm px-4">
-          <div
-            className="bg-[#1a1a1a] border border-green-600/40 rounded-2xl shadow-2xl max-w-md w-full p-8 
-    text-center animate-fadeIn"
-          >
+          <div className="bg-[#1a1a1a] border border-green-600/40 rounded-2xl shadow-2xl max-w-sm w-full p-6 text-center">
             <div className="flex justify-center mb-4">
               <i className="fa-solid fa-circle-check text-green-500 text-5xl"></i>
             </div>
-            <h2 className="text-2xl font-bold text-green-500 bricolage-font">
+            <h2 className="text-xl font-bold text-green-500 bricolage-font">
               Booking Successful!
             </h2>
-            <p className="text-gray-300 mt-3">
+            <p className="text-gray-300 mt-2 text-sm sm:text-base">
               Thank you for choosing us. We’ll contact you shortly with
               confirmation details.
             </p>
             <button
               onClick={() => setShowSuccessModal(false)}
-              className="mt-6 px-6 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition"
+              className="mt-4 px-6 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition text-sm sm:text-base"
             >
               Close
             </button>
