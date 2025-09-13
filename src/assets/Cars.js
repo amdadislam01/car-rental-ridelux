@@ -1,4 +1,3 @@
-// car image
 
 import carImage1 from '../../src/assets/cars-slide-01.jpg';
 import carImage2 from '../../src/assets/cars-slide-02.jpg';

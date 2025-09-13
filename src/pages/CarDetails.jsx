@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 
-import cardata from "../../Cars.json";
+import { cardata } from "../assets/Cars";
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
