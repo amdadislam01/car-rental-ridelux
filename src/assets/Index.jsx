@@ -37,8 +37,8 @@ import test3 from "../assets/test-3.jpg";
 import test4 from "../assets/test-4.jpg";
 import test5 from "../assets/test-5.jpg";
 
-import cardata from "../assets/Cars.json";
-import blogdata from "../assets/Blog.json";
+import cardata from "";
+import blogdata from "../../Blog.json";
 
 import { Link } from "react-router-dom";
 
