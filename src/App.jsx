@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Index from './pages/Index'
 import CarDetails from './pages/CarDetails'
 import Footer from './components/Footer'
+import Cars from './pages/Cars'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path='/' element={<Index />}/>
+          <Route path='/Cars' element={<Cars />}/>
           <Route path='/car/:id' element={<CarDetails />}/>
         </Routes>
         <Footer />

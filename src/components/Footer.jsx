@@ -38,12 +38,6 @@ const Footer = () => {
                   href="#"
                   className="border border-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-red-600 hover:text-black transition-colors duration-300"
                 >
-                  <i className="fa-brands fa-github"></i>
-                </a>
-                <a
-                  href="#"
-                  className="border border-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-red-600 hover:text-black transition-colors duration-300"
-                >
                   <i className="fa-brands fa-youtube"></i>
                 </a>
               </div>
