@@ -2,7 +2,7 @@
     {
         "id": "1",
         "name": "Documents required for car rental",
-        "image" : "./public/Image/blog-image-01.webp",
+        "image" : "../../public/Image/blog-image-01.webp",
         "date" : "April 17, 2025",
         "author": "Martin C",
         "category": "Cars"
@@ -10,7 +10,7 @@
     {
         "id": "2",
         "name": "Rental cost of sport and other cars",
-        "image" : "./public/Image/blog-image-02.webp",
+        "image" : "../../public/Image/blog-image-02.webp",
         "date" : "May 5, 2025",
         "author": "Martin C",
         "category": "Vehicles"
@@ -18,7 +18,7 @@
     {
         "id": "3",
         "name": "Rental cars how to check driving fines?",
-        "image" : "./public/Image/blog-image-03.webp",
+        "image" : "../../public/Image/blog-image-03.webp",
         "date" : "May 8, 2025",
         "author": "Martin C",
         "category": "Rent A Car"
@@ -26,7 +26,7 @@
     {
         "id": "4",
         "name": "How to Rent a Car at the Airport Terminal?",
-        "image" : "./public/Image/blog-image-04.webp",
+        "image" : "../../public/Image/blog-image-04.webp",
         "date" : "May 8, 2025",
         "author": "Martin C",
         "category": "Rental Service"
@@ -34,7 +34,7 @@
     {
         "id": "5",
         "name": "New Rules in Rental Cars",
-        "image" : "./public/Image/blog-image-05.webp",
+        "image" : "../../public/Image/blog-image-05.webp",
         "date" : "May 9, 2025",
         "author": "Martin C",
         "category": "Rules"
@@ -42,7 +42,7 @@
     {
         "id": "6",
         "name": "Luxury Cars You Can Rent Today",
-        "image" : "./public/Image/blog-image-01.webp",
+        "image" : "../../public/Image/blog-image-01.webp",
         "date" : "May 10, 2025",
         "author": "Martin C",
         "category": "Luxury"
@@ -50,7 +50,7 @@
     {
         "id": "7",
         "name": "Driving Tips While Using Rental Cars",
-        "image" : "./public/Image/blog-image-02.webp",
+        "image" : "../../public/Image/blog-image-02.webp",
         "date" : "May 11, 2025",
         "author": "Martin C",
         "category": "Driving Tips"
@@ -58,7 +58,7 @@
     {
         "id": "8",
         "name": "Is Insurance Required for a Car Rental?",
-        "image" : "./public/Image/blog-image-03.webp",
+        "image" : "../../public/Image/blog-image-03.webp",
         "date" : "May 12, 2025",
         "author": "Martin C",
         "category": "Insurance"
@@ -66,7 +66,7 @@
     {
         "id": "9",
         "name": "Top 5 Sports Cars for Rent in 2025",
-        "image" : "./public/Image/blog-image-01.webp",
+        "image" : "../../public/Image/blog-image-01.webp",
         "date" : "May 13, 2025",
         "author": "Martin C",
         "category": "Sports Cars"
