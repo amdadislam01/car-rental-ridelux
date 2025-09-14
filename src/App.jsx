@@ -6,6 +6,7 @@ import CarDetails from './pages/CarDetails'
 import Footer from './components/Footer'
 import Cars from './pages/Cars'
 import About from './pages/About'
+import Blog from './pages/Blog'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path='/Cars' element={<Cars />}/>
           <Route path='/car/:id' element={<CarDetails />}/>
           <Route path='/About' element={<About />}/>
+          <Route path='/Blog' element={<Blog />}/>
         </Routes>
         <Footer />
       </Router>
