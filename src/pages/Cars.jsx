@@ -53,6 +53,17 @@ const Cars = () => {
             </h1>
         </div>
       </div>
+      <div className="flex flex-col-reverse md:flex-row gap-8lg:px-[12%] px-[8%] py-[50px] lg:py-[90px]">
+        <div className="w-full sticky top-0 md:w-[300px] bg-[#1e1f22] rounded-2xl p-6 shadow-lg animate-side-left h-full">
+          <div className="mb-6">
+            <input type="text" 
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className='w-full px-4 py-2 rounded-lg bg-[#121212] text-white border border-gray-600 outline-none'
+            placeholder='Search cars....' />
+          </div>
+        </div>
+      </div>
     </>
   )
 }
