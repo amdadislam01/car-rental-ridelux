@@ -373,7 +373,7 @@ const About = () => {
           <p className="uppercase text-sm tracking-[5px] text-[#e8021f] mb-2">
             Certified Team 
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold mb-3  bricolage-font text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-10  bricolage-font text-white">
             Other Experts <span className="text-red-600">Team</span>
           </h2>
         </div>
