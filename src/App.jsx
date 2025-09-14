@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Cars from './pages/Cars'
 import About from './pages/About'
 import Blog from './pages/Blog'
+import Contact from './pages/Contact'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path='/car/:id' element={<CarDetails />}/>
           <Route path='/About' element={<About />}/>
           <Route path='/Blog' element={<Blog />}/>
+          <Route path='/Contact' element={<Contact />}/>
         </Routes>
         <Footer />
       </Router>
