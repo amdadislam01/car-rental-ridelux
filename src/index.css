@@ -240,3 +240,24 @@ body {
 .popup-form .react-datepicker-wrapper{
     width: 100% !important;
 }
+
+/* banner-section */
+.banner-section{
+    width: 100%;
+    background-image: url(assets/hero-slide-2.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-color);
+    opacity: .7;
+}
