@@ -170,7 +170,6 @@ const Cars = () => {
             )}
           </div>
         </div>
-        
       </div>
     </>
   )
