@@ -98,9 +98,11 @@ const Index = () => {
                   <button className="default-btn bg-[#e8021f] transition-all hover:bg-white hover:text-black py-3 px-5 lg:px-7 lg:py-5 bricolage-font rounded-full transform hover:-translate-y-1 cursor-pointer">
                     View More <i className="bi bi-arrow-up-right"></i>
                   </button>
+                  <Link to='/Cars'>
                   <button className="default-btn border  py-3 px-5 lg:px-7 lg:py-5 bricolage-font rounded-full transition-all hover:bg-[#e8021f] hover:border-transparent transform hover:-translate-y-1 cursor-pointer">
                     Rent Now <i className="bi bi-arrow-up-right"></i>
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -127,9 +129,11 @@ const Index = () => {
                   <button className="default-btn bg-[#e8021f] transition-all hover:bg-white hover:text-black py-3 px-5 lg:px-7 lg:py-5 bricolage-font rounded-full transform hover:-translate-y-1 cursor-pointer">
                     View More <i className="bi bi-arrow-up-right"></i>
                   </button>
+                  <Link to='/Cars'>
                   <button className="default-btn border  py-3 px-5 lg:px-7 lg:py-5 bricolage-font rounded-full transition-all hover:bg-[#e8021f] hover:border-transparent transform hover:-translate-y-1 cursor-pointer">
                     Rent Now <i className="bi bi-arrow-up-right"></i>
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -156,9 +160,11 @@ const Index = () => {
                   <button className="default-btn bg-[#e8021f] transition-all hover:bg-white hover:text-black py-3 px-5 lg:px-7 lg:py-5 bricolage-font rounded-full transform hover:-translate-y-1 cursor-pointer">
                     View More <i className="bi bi-arrow-up-right"></i>
                   </button>
+                  <Link to='/Cars'>
                   <button className="default-btn border  py-3 px-5 lg:px-7 lg:py-5 bricolage-font rounded-full transition-all hover:bg-[#e8021f] hover:border-transparent transform hover:-translate-y-1 cursor-pointer">
                     Rent Now <i className="bi bi-arrow-up-right"></i>
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>
