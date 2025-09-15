@@ -1,8 +1,9 @@
 # RideLux Car Rental
 
 > **Project:** RideLux Car Rental (Frontend)
-> **Author:** MD. Amdad Islam
+></br>
 > **Repository:** [https://github.com/amdadislam01/car-rental-ridelux](https://github.com/amdadislam01/car-rental-ridelux)
+> </br>
 > **Live Demo:** *\[Add live demo link if deployed]*
 
 ---
