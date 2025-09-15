@@ -10,7 +10,7 @@ const Blog = () => {
             - Blog & News
           </h6>
           <h1 className="text-4xl lg:text-5xl xl:text-8xl font-semibold bricolage-font text-red-600">
-            <span className="text-white bricolage-font">Our </span>Blog
+            <span className="text-white bricolage-font">Latest </span>News
           </h1>
         </div>
       </div>
