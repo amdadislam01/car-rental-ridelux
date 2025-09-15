@@ -4,7 +4,7 @@
 ></br>
 > **Repository:** [https://github.com/amdadislam01/car-rental-ridelux](https://github.com/amdadislam01/car-rental-ridelux)
 > </br>
-> **Live Demo:** *\[Add live demo link if deployed]*
+> **Live Demo:** *\[https://car-rental-ridelux.vercel.app/]*
 
 ---
 
