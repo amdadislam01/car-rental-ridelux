@@ -1,4 +1,4 @@
-# RideLux Car Rental
+# RideLux Car Renta
 
 > **Project:** RideLux Car Rental (Frontend)
 ></br>
